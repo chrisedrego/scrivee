@@ -21,6 +21,17 @@
     text-decoration: none;
     font-size: 17px;
     background-color: red;
+    animation-name: left-bar;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes left-bar  {
+    0%   {background-color:rgb(255,0,255); }
+    25%  {background-color:rgb(255,0,200);}
+    50%  {background-color: rgb(255,0,150); }
+    75%  {background-color: rgb(255,0,100); }
+    100% {background-color: rgb(255,0,255);}
   }
 
   .title-bar{
@@ -73,11 +84,25 @@
 }
 
 .center{
-  width: 200px;
-  height: 100px;
+  width: 100%;
+  float: left;
+  height: 1000px;
+  margin-top: -20px;
   font-size: 300px;
-  position: absolute;
   top: 400%;
-  left: 30%;
+  left: 25%;
   font-family: 'Fredoka One', cursive;
+  background-image: linear-gradient(-90deg,#4B00E1,red, rgb(255,0,255));
+}
+
+#center-content {
+  color: rgb(243, 236, 236);
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+#center-content:hover {
+  color: white;
+  margin-left: 20%;
+  margin-top: 10%; 
 }
